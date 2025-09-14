@@ -105,7 +105,7 @@ def cloud_thread(n_samples: int, test_mode: bool = False):
     if test_mode:
         print("[TEST] Generating synthetic data…")
         t = 0.0
-        dt = 0.02      # ~50 Hz
+        dt = 0.02   
         phase = 0
         while not stop_event.is_set():
             if phase % 2 == 0:
